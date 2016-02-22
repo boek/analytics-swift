@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		425109591C7BB43700A08833 /* AnalyticsSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E3351691B290AE8000EF548 /* AnalyticsSwift.h */; };
+		4251095A1C7BB43700A08833 /* Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3351801B290AF4000EF548 /* Analytics.swift */; };
+		4251095B1C7BB43700A08833 /* AliasMessageBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3351821B290B05000EF548 /* AliasMessageBuilder.swift */; };
+		4251095C1C7BB43700A08833 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3351831B290B05000EF548 /* Credentials.swift */; };
+		4251095D1C7BB43700A08833 /* Executor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3351841B290B05000EF548 /* Executor.swift */; };
+		4251095E1C7BB43700A08833 /* GroupMessageBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3351851B290B05000EF548 /* GroupMessageBuilder.swift */; };
+		4251095F1C7BB43700A08833 /* IdentifyMessageBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3351861B290B05000EF548 /* IdentifyMessageBuilder.swift */; };
+		425109601C7BB43700A08833 /* MessageBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3351871B290B05000EF548 /* MessageBuilder.swift */; };
+		425109611C7BB43700A08833 /* ScreenMessageBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3351881B290B05000EF548 /* ScreenMessageBuilder.swift */; };
+		425109621C7BB43700A08833 /* SerialExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3351891B290B05000EF548 /* SerialExecutor.swift */; };
+		425109631C7BB43700A08833 /* TrackMessageBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E33518A1B290B05000EF548 /* TrackMessageBuilder.swift */; };
 		6E33516A1B290AE8000EF548 /* AnalyticsSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E3351691B290AE8000EF548 /* AnalyticsSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6E3351701B290AE8000EF548 /* AnalyticsSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E3351641B290AE8000EF548 /* AnalyticsSwift.framework */; };
 		6E3351771B290AE8000EF548 /* AnalyticsSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3351761B290AE8000EF548 /* AnalyticsSwiftTests.swift */; };
@@ -34,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		425109511C7BB3C900A08833 /* AnalyticsSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AnalyticsSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E3351641B290AE8000EF548 /* AnalyticsSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AnalyticsSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E3351681B290AE8000EF548 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E3351691B290AE8000EF548 /* AnalyticsSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnalyticsSwift.h; sourceTree = "<group>"; };
@@ -54,6 +66,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4251094D1C7BB3C900A08833 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6E3351601B290AE8000EF548 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -86,6 +105,7 @@
 			children = (
 				6E3351641B290AE8000EF548 /* AnalyticsSwift.framework */,
 				6E33516F1B290AE8000EF548 /* AnalyticsSwiftTests.xctest */,
+				425109511C7BB3C900A08833 /* AnalyticsSwift.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -138,6 +158,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		4251094E1C7BB3C900A08833 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				425109591C7BB43700A08833 /* AnalyticsSwift.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6E3351611B290AE8000EF548 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -149,9 +177,27 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		6E3351631B290AE8000EF548 /* AnalyticsSwift */ = {
+		425109501C7BB3C900A08833 /* AnalyticsSwift-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6E33517A1B290AE8000EF548 /* Build configuration list for PBXNativeTarget "AnalyticsSwift" */;
+			buildConfigurationList = 425109561C7BB3C900A08833 /* Build configuration list for PBXNativeTarget "AnalyticsSwift-iOS" */;
+			buildPhases = (
+				4251094C1C7BB3C900A08833 /* Sources */,
+				4251094D1C7BB3C900A08833 /* Frameworks */,
+				4251094E1C7BB3C900A08833 /* Headers */,
+				4251094F1C7BB3C900A08833 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AnalyticsSwift-iOS";
+			productName = "AnalyticsSwift-iOS";
+			productReference = 425109511C7BB3C900A08833 /* AnalyticsSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6E3351631B290AE8000EF548 /* AnalyticsSwift-OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E33517A1B290AE8000EF548 /* Build configuration list for PBXNativeTarget "AnalyticsSwift-OSX" */;
 			buildPhases = (
 				6E33515F1B290AE8000EF548 /* Sources */,
 				6E3351601B290AE8000EF548 /* Frameworks */,
@@ -162,7 +208,7 @@
 			);
 			dependencies = (
 			);
-			name = AnalyticsSwift;
+			name = "AnalyticsSwift-OSX";
 			productName = AnalyticsSwift;
 			productReference = 6E3351641B290AE8000EF548 /* AnalyticsSwift.framework */;
 			productType = "com.apple.product-type.framework";
@@ -196,6 +242,9 @@
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = Segment;
 				TargetAttributes = {
+					425109501C7BB3C900A08833 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
 					6E3351631B290AE8000EF548 = {
 						CreatedOnToolsVersion = 6.3.2;
 					};
@@ -216,13 +265,21 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6E3351631B290AE8000EF548 /* AnalyticsSwift */,
+				6E3351631B290AE8000EF548 /* AnalyticsSwift-OSX */,
 				6E33516E1B290AE8000EF548 /* AnalyticsSwiftTests */,
+				425109501C7BB3C900A08833 /* AnalyticsSwift-iOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4251094F1C7BB3C900A08833 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6E3351621B290AE8000EF548 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -240,6 +297,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4251094C1C7BB3C900A08833 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				425109601C7BB43700A08833 /* MessageBuilder.swift in Sources */,
+				425109611C7BB43700A08833 /* ScreenMessageBuilder.swift in Sources */,
+				4251095E1C7BB43700A08833 /* GroupMessageBuilder.swift in Sources */,
+				4251095F1C7BB43700A08833 /* IdentifyMessageBuilder.swift in Sources */,
+				4251095D1C7BB43700A08833 /* Executor.swift in Sources */,
+				425109631C7BB43700A08833 /* TrackMessageBuilder.swift in Sources */,
+				4251095C1C7BB43700A08833 /* Credentials.swift in Sources */,
+				425109621C7BB43700A08833 /* SerialExecutor.swift in Sources */,
+				4251095B1C7BB43700A08833 /* AliasMessageBuilder.swift in Sources */,
+				4251095A1C7BB43700A08833 /* Analytics.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6E33515F1B290AE8000EF548 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -271,12 +345,54 @@
 /* Begin PBXTargetDependency section */
 		6E3351721B290AE8000EF548 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6E3351631B290AE8000EF548 /* AnalyticsSwift */;
+			target = 6E3351631B290AE8000EF548 /* AnalyticsSwift-OSX */;
 			targetProxy = 6E3351711B290AE8000EF548 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		425109571C7BB3C900A08833 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = "AnalyticsSwift-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = com.segment.;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.segment.AnalyticsSwift-iOS";
+				PRODUCT_NAME = AnalyticsSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		425109581C7BB3C900A08833 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "AnalyticsSwift-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = com.segment.;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.segment.AnalyticsSwift-iOS";
+				PRODUCT_NAME = AnalyticsSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		6E3351781B290AE8000EF548 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -374,7 +490,7 @@
 				INFOPLIST_FILE = AnalyticsSwift/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = AnalyticsSwift;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -393,7 +509,7 @@
 				INFOPLIST_FILE = AnalyticsSwift/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = AnalyticsSwift;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -433,6 +549,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		425109561C7BB3C900A08833 /* Build configuration list for PBXNativeTarget "AnalyticsSwift-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				425109571C7BB3C900A08833 /* Debug */,
+				425109581C7BB3C900A08833 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		6E33515E1B290AE8000EF548 /* Build configuration list for PBXProject "AnalyticsSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -442,7 +566,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6E33517A1B290AE8000EF548 /* Build configuration list for PBXNativeTarget "AnalyticsSwift" */ = {
+		6E33517A1B290AE8000EF548 /* Build configuration list for PBXNativeTarget "AnalyticsSwift-OSX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6E33517B1B290AE8000EF548 /* Debug */,
