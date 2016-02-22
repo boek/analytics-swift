@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		425109591C7BB43700A08833 /* AnalyticsSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E3351691B290AE8000EF548 /* AnalyticsSwift.h */; };
+		425109591C7BB43700A08833 /* AnalyticsSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E3351691B290AE8000EF548 /* AnalyticsSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4251095A1C7BB43700A08833 /* Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3351801B290AF4000EF548 /* Analytics.swift */; };
 		4251095B1C7BB43700A08833 /* AliasMessageBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3351821B290B05000EF548 /* AliasMessageBuilder.swift */; };
 		4251095C1C7BB43700A08833 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3351831B290B05000EF548 /* Credentials.swift */; };
@@ -360,9 +360,9 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_TESTABILITY = YES;
-				INFOPLIST_FILE = "AnalyticsSwift-iOS/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/AnalyticsSwift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = com.segment.;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.segment.AnalyticsSwift-iOS";
 				PRODUCT_NAME = AnalyticsSwift;
@@ -380,9 +380,9 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "AnalyticsSwift-iOS/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/AnalyticsSwift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = com.segment.;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.segment.AnalyticsSwift-iOS";
 				PRODUCT_NAME = AnalyticsSwift;

@@ -6,7 +6,13 @@
 //  Copyright (c) 2015 Segment. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+#import <TargetConditionals.h>
+
+#if TARGET_OS_IPHONE || TARGET_OS_TV
+    #import <UIKit/UIKit.h>
+#else
+    #import <AppKit/AppKit.h>
+#endif
 
 //! Project version number for AnalyticsSwift.
 FOUNDATION_EXPORT double AnalyticsSwiftVersionNumber;
